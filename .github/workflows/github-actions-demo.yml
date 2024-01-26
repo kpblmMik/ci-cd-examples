@@ -28,4 +28,4 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ secrets.AWS_REGION }}
       - name: AWS Demo Access
-        run: aws s3 ls s3://cibicket24
+        run: aws s3 sync build  s3://cibicket24
